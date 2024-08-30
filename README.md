@@ -1,6 +1,6 @@
-# DT-Money
+## DT-Money
 
-#### Ferramentas Utilizadas Neste Projeto:
+### Ferramentas Utilizadas Neste Projeto:
 
     - React
     - TypeScript
@@ -18,4 +18,45 @@
 ### O que são portals no React?
 ```
     Uma forma de renderizar um elemento filho dentro de um nó DOM que existe fora da hierarquia do componente pai.
+```
+
+### 3 maneiras de receber uma api com react.
+
+```
+    async function loadTransactions(){
+        const response = await fetch('http://localhost:3333/transactions')
+        const data = await response.json();
+
+        console.log(data)
+    }
+
+    useEffect(() => {
+        loadTransactions();
+    }, [])
+
+```
+
+```
+    useEffect(() => {
+
+        async function loadTransactions(){
+            const response = await fetch('http://localhost:3333/transactions')
+            const data = await response.json();
+
+            console.log(data)
+        }
+
+        loadTransactions();
+    }, [])
+
+```
+
+```
+    useEffect(() => {
+        fetch('http://localhost:3333/transactions')
+            .then(response => response.json());
+            .then(data => {
+                console.log(data)
+            })
+    }, [])
 ```
