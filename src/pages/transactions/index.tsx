@@ -7,7 +7,7 @@ import { TransactionContext } from "../../contexts/TransactionContext";
 import { dateFormatter, priceFormatter } from "../../utils/formatter";
 
 export function Transactions() {
-  const { transactions } = useContext(TransactionContext)
+  const { transactions, isLoading } = useContext(TransactionContext);
 
   return (
     <div>
@@ -16,26 +16,27 @@ export function Transactions() {
 
       <TransactionsContainer>
         <SearchForm />
-
-        <TransactionsTable>
-          <tbody>
-            {transactions.map((tAction) => {
-              return (
-                <tr key={tAction.id}>
-                  <td width="50%">{tAction.description}</td>
+        {isLoading ? (
+          <p>Carregando...</p>
+        ) : (
+          <TransactionsTable>
+            <tbody>
+              {transactions.map((transaction) => (
+                <tr key={transaction.id}>
+                  <td width="50%">{transaction.description}</td>
                   <td>
-                    <PriceHighlight variant={tAction.type}>
-                      {tAction.type === 'outcome' && '- '}
-                      {priceFormatter.format(tAction.price)}
+                    <PriceHighlight variant={transaction.type}>
+                      {transaction.type === 'outcome' && '- '}
+                      {priceFormatter.format(transaction.price)}
                     </PriceHighlight>
                   </td>
-                  <td>{tAction.category}</td>
-                  <td>{dateFormatter.format(new Date(tAction.createdAt))}</td>
+                  <td>{transaction.category}</td>
+                  <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
                 </tr>
-              )
-            })}
-          </tbody>
-        </TransactionsTable>
+              ))}
+            </tbody>
+          </TransactionsTable>
+        )}
       </TransactionsContainer>
     </div>
   );
