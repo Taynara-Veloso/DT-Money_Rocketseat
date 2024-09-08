@@ -34,6 +34,30 @@ export const TransactionsTable = styled.table`
   }
 `
 
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  gap: 2rem;
+`
+
+export const Button = styled.button`
+  display: flex;
+  padding: 0.5rem;
+  background-color: ${(props) => props.theme['gray-700']};
+  color: ${(props) => props.theme['gray-100']};
+  border-radius: 8px;
+
+  &:disabled {
+    color: ${(props) => props.theme['gray-500']};
+  }
+`
+
+export const PaginationCount = styled.span`
+  display: flex;
+  align-items: center;
+`
+
 interface PriceHighlightProps {
   variant: 'income' | 'outcome'
 }
