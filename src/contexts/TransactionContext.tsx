@@ -1,3 +1,4 @@
+import { api } from "../lib/axios";
 import { createContext, ReactNode, useEffect, useState } from "react";
 
 interface Transaction {
@@ -28,18 +29,15 @@ export function TransactionsProvider({children}: TransactionsProviderProps){
   async function fetchTransactions(query?: string) {
     setIsLoading(true); // Inicia o loading
     try {
-      const url = new URL('http://localhost:3000/transactions');
+      const response = await api.get('/transactions', {
+        params: {
+          q: query,
+        }
+      })
 
-      if(query){
-        url.searchParams.append('q', query);
-      }
-      
-      const response = await fetch(url)
-      const data = await response.json();
       console.log(response);
-      console.log(data);
-      
-      setTransactions(data);
+      setTransactions(response.data);
+
     } finally {
       setIsLoading(false); // finaliza o loading
     }
