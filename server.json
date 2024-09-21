@@ -39,6 +39,126 @@
       "category": "Compras",
       "price": 800,
       "createdAt": "2024-08-03T19:19:19.700Z"
+    },
+    {
+      "id": 6,
+      "description": "Desenvolvimento de sites",
+      "type": "income",
+      "category": "Venda",
+      "price": 10000,
+      "createdAt": "2024-08-29T20:20:20.700Z"
+    },
+    {
+      "id": 7,
+      "description": "Compras no Semar",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 1200,
+      "createdAt": "2024-08-30T09:09:09.700Z"
+    },
+    {
+      "id": 8,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 120,
+      "createdAt": "2024-08-31T21:21:21.700Z"
+    },
+    {
+      "id": 9,
+      "description": "Acaí",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 75,
+      "createdAt": "2024-09-01T20:20:20.700Z"
+    },
+    {
+      "id": 10,
+      "description": "Hortifruti",
+      "type": "outcome",
+      "category": "Compras",
+      "price": 800,
+      "createdAt": "2024-08-03T19:19:19.700Z"
+    },
+    {
+      "id": 11,
+      "description": "Desenvolvimento de sites",
+      "type": "income",
+      "category": "Venda",
+      "price": 10000,
+      "createdAt": "2024-08-29T20:20:20.700Z"
+    },
+    {
+      "id": 12,
+      "description": "Viagem",
+      "type": "outcome",
+      "category": "Saúde",
+      "price": 1200,
+      "createdAt": "2024-08-30T09:09:09.700Z"
+    },
+    {
+      "id": 13,
+      "description": "Pizza 1",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 120,
+      "createdAt": "2024-08-31T21:21:21.700Z"
+    },
+    {
+      "id": 14,
+      "description": "Remédios",
+      "type": "outcome",
+      "category": "Saúde",
+      "price": 250,
+      "createdAt": "2024-09-01T20:20:20.700Z"
+    },
+    {
+      "id": 15,
+      "description": "Shoppe",
+      "type": "outcome",
+      "category": "Compras",
+      "price": 568,
+      "createdAt": "2024-08-03T19:19:19.700Z"
+    },
+    {
+      "id": 16,
+      "description": "Desenvolvimento de sites",
+      "type": "income",
+      "category": "Venda",
+      "price": 10000,
+      "createdAt": "2024-08-29T20:20:20.700Z"
+    },
+    {
+      "id": 17,
+      "description": "Hortifruti",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 100,
+      "createdAt": "2024-08-30T09:09:09.700Z"
+    },
+    {
+      "id": 18,
+      "description": "óculos de grau",
+      "type": "outcome",
+      "category": "Saúde",
+      "price": 550,
+      "createdAt": "2024-08-31T21:21:21.700Z"
+    },
+    {
+      "id": 19,
+      "description": "Remédios",
+      "type": "outcome",
+      "category": "Saúde",
+      "price": 80,
+      "createdAt": "2024-09-01T20:20:20.700Z"
+    },
+    {
+      "id": 20,
+      "description": "Presentes surpresa",
+      "type": "outcome",
+      "category": "Compras",
+      "price": 400,
+      "createdAt": "2024-08-03T19:19:19.700Z"
     }
   ]
 }
