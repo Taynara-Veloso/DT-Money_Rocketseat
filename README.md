@@ -60,3 +60,18 @@
             })
     }, [])
 ```
+
+### O que é o accumulator do método reduce de arrays?
+```
+É o valor inicial do reduce, onde podemos alterá-lo entre iterações para poder acumular valores.
+```
+
+### O que é um hook do React?
+```
+É uma função que tem acesso a recursos do React dentro dela, como estado ou outros hooks.
+```
+
+### Para que serve o Controller do React Hook Form?
+```
+Para adicionar comportamentos de formulário à inputs personalizados, que não são nativos do HTML, onde temos diferentes formas de recuperar e alterar seu valor.
+```
